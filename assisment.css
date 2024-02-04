@@ -3,119 +3,123 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: aquamarine;
+}
 
-#main-contend {
-    background-color: burlywood;
-    height: 650px;
-    width: 1300px;
-    /* margin: 20px 0px 0px 150px; */
-    /* display: flex; */
-    
+.contact {
+    background-color: aquamarine;
+    height: auto;
+    width: 100%; 
+    padding: 20px;
+
 }
 
 
 h1 {
     color: brown;
-    margin: 0px 10px 0px 25px;
-    padding: 5px;
+    font-weight: 600;
     font-size: 35px;
 }
 
-hr {
-    margin: 20px 35px 10px 30px;
-
+hr{
+    margin: 15px 0;
 }
 
 .header {
     background-color: white;
-    height: 110px;
-    width: 95%;
-    position: relative;
-    margin: 20px 0px 10px 30px; 
-      
+    height: auto;
+    margin: auto;
+    border: 1px solid black; 
 }
 
-h3 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+.address{
+    padding: 15px 0 0 20px;
+
+    
 }
 
 .address-detials {
-    position: absolute;
-    left: 10px;
-    top: 35px;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    height: auto;
+    align-items: center;
+    margin: 0px 0px 20px 20px ;
+    padding: 10px 0 10px;
+}
+
+.addr{
+    margin-bottom: 20px;
 }
 
 .contact-detials {
-    position: absolute;
-    left: 550px;
-    top: 35px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .location{
-    position: absolute;
-    left: 1100px;
-    top: 35px;
     color: red;
     font-size: 40px;
     
 }
 
-.header2 {
-    width: 95%;
-    height: 350px;
-    margin: 20px 0px 10px 30px;
-    padding: 10px;
-    display: flex;
+.main-contant {
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
     background-color: white;
-    position: relative;
-   
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-.name{
-    top: 10px;
-    left: 10px;
-    font-size: 20px;
-    position: absolute;
+.input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 0px;
+    justify-content: flex-start;
 }
 
-.email{
-    top: 70px;
-    left: 10px;
-    font-size: 20px;
-    position: absolute;
+.input>div {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
 }
 
-.company{
-    top: 10px;
-    left: 300px;
-    font-size: 20px;
-    position: absolute;
+.input_field{
+    width: 100%;
+    height: 30px;
+    font-weight: 800;
+    font-size: 1rem;
+    background-color: rgba(214, 214, 230, 0.541);
+    padding: 0 5px;
 }
 
-.mobile{
-    top: 70px;
-    left: 300px;
-    font-size: 20px;
-    position: absolute;
-}
-
-.message {
-    top: 130px;
-    left: 10px;
-    font-size: 20px;
-    position: absolute;
-    height: 100px;
-    width: 540px;
+.message_field{
+    padding: 50px 0px 0px 10px;
+    font-weight: 800;
+    font-size: 1rem;
+    background-color: rgba(214, 214, 230, 0.541);
+    
 }
 
 .iframe{
     display: flex;
-    position: absolute;
-    top: 233px;
-    left: 640px;
+    flex-direction: column;
+    gap: 10px;
        
+}
+
+.iframe_map{
+    width: 500px;
+    height: 100%;
 }
 .fa-envelope {
     color: cornflowerblue;
@@ -128,41 +132,26 @@ h3 {
 }
 
 .fa-facebook {
-    position: absolute;
-    top: 300px;
-    right: 550px;
     color: darkmagenta;
     font-size: 20px;
 }
 
 .fa-twitter {
-    position: absolute;
-    top: 300px;
-    right: 520px;
     color: blueviolet;
     font-size: 20px;
 }
 
 .fa-linkedin {
-    position: absolute;
-    top: 300px;
-    right: 490px;
     color: cadetblue;
     font-size: 20px;
 }
 
 .fa-circle-user {
-    position: absolute;
-    top: 300px;
-    right: 455px;
     color: coral;
     font-size: 20px;
 }
 
 button {
-    position: absolute;
-    top: 250px;
-    left: 10px;
     width: 80px;
     height: 45px;
     border-radius: 10px;
@@ -175,3 +164,31 @@ button {
     color: coral;
     font-size: 20px;
 }
+
+@media screen and (min-width:200px) and (max-width:600px) {
+    .location{
+        /* color: red;
+        font-size: 40px; */
+        width:100px;
+    
+}
+}
+@media screen and (min-width:200px) and (max-width:905px){
+    .iframe_map{
+        width: 100%;
+        overflow: hidden;
+    }
+
+}
+@media screen and (min-width:200px) and (max-width:400px){
+.input_field{
+    width: 100%;
+    height: 30px;
+    font-weight: 100;
+    font-size: 16px;
+    background-color: rgba(214, 214, 230, 0.541);
+    padding: 0 5px;
+}
+}
+
+
