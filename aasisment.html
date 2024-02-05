@@ -42,21 +42,25 @@
  
 
         <section class="main-contant">
-    <div class="input">   
+            <form action="method">
+    <div class="input"> 
         <div>
-            <input class="input_field" type="text" placeholder="Name">
+            <input class="input_field" type="text" placeholder="Name" required>
 
-            <input class="input_field" type="text" placeholder="Company">
+            <input class="input_field" type="text" placeholder="Company" required>
         </div>
         <div>
-            <input class="input_field" type="text" placeholder="Email">
+            <input class="input_field" type="email" placeholder="Email" required>
 
-            <input class="input_field" type="text" placeholder="Mobile">
+            <input class="input_field" type="tel" placeholder="Mobile" minlength="3" maxlength="10" required>
         </div>
-        <textarea name="" id="" cols="30" rows="5" placeholder="Message" class="message_field"></textarea>
+        
+        <textarea name="" id="" cols="30" rows="5" placeholder="Message" class="message_field"></textarea required>
 
-        <button>Submit</button>
-    </div>       
+        <input class="button" type="submit" value="Submit" name="" id="">
+
+    </div>
+        </form>       
 
             <div class="iframe">
             <iframe
