@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* ****** CONTACT****** */
+
 body{
     background-color: aquamarine;
 }
@@ -39,6 +42,8 @@ hr{
     
 }
 
+/* ********* Address Detials ********* */
+
 .address-detials {
     display: flex;
     justify-content: space-between;
@@ -53,6 +58,7 @@ hr{
     margin-bottom: 20px;
 }
 
+/* ****** Contact Detials ****** */
 .contact-detials {
     display: flex;
     flex-direction: column;
@@ -65,6 +71,7 @@ hr{
     
 }
 
+/* ******** Main Contant ******** */
 .main-contant {
     width: 100%;
     margin-top: 30px;
@@ -111,6 +118,8 @@ hr{
     
 }
 
+
+/* ******** Iframe map ********* */
 .iframe{
     display: flex;
     flex-direction: column;
@@ -131,6 +140,8 @@ hr{
     color: red;
     font-size: 20px;
 }
+
+/* ******* Icon ******** */
 
 .fa-facebook {
     color: darkmagenta;
@@ -166,7 +177,7 @@ hr{
     font-size: 20px;
 }
 
-
+/* ********** @Media query ********** */
 @media screen and (min-width:200px) and (max-width:905px){
     .iframe_map{
         width: 100%;
