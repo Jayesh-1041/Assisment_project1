@@ -51,16 +51,24 @@
         <form action="method">
     <div class="input"> 
         <div>
-            <input class="input_field" type="text" placeholder="Name" required>
+            <input class="input_field" type="text" placeholder="Name" minlength="3" maxlength="6" pattern="[A-Za-z]{6}" required>
+
 
             <input class="input_field" type="text" placeholder="Company" required>
         </div>
         <div>
             <input class="input_field" type="email" placeholder="Email" required>
 
-            <input class="input_field" type="tel" placeholder="Mobile" minlength="3" maxlength="10" required>
+            <input class="input_field" name="tel"
+            type="tel"
+            pattern="[1-9]{1}[0-9]{9}"
+            placeholder="Phone number"
+            maxlength="10"
+            size="2" 
+             required>
         </div>
-
+        <!-- minlength="10" maxlength="10" -->
+        <!-- onkeyup="this.value = this.value.replace(/[^0-9-]/g, '');" -->
         <textarea name="" id="" cols="30" rows="5" placeholder="Message" class="message_field"></textarea required>
 
         <input class="button" type="submit" value="Submit" name="" id="">

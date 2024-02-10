@@ -118,6 +118,15 @@ hr{
     
 }
 
+.button {
+    width: 80px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(212, 199, 194);
+    background-color: red;
+}
+
 
 /* ******** Iframe map ********* */
 .iframe{
@@ -163,14 +172,6 @@ hr{
     font-size: 20px;
 }
 
-.button {
-    width: 80px;
-    height: 45px;
-    border-radius: 10px;
-    font-size: 20px;
-    color: rgb(212, 199, 194);
-    background-color: red;
-}
 
 .fa-house {
     color: coral;
